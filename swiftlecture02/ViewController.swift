@@ -49,7 +49,8 @@ class ViewController: UIViewController {
             print("\(a):\(b)")
         }
 
-        let dicSorted=dic.sorted(by: {$0.key<$1.key  })
+//        let dicSorted=dic.sorted(by: {$0.key<$1.key  })
+//        let dicSorted2=dic.so
         //let dicSorted=dic.sorted(by: {$0.value<$1.value  })
         for(a ,b)in dicSorted{
             print("\(a):\(b)")
