@@ -64,6 +64,9 @@ class ViewController: UIViewController {
             print("timer:\(smalltimer.isValid)")
             
         })
+    
+    _=self.add(first: 1, second: 2)
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,5 +75,13 @@ class ViewController: UIViewController {
     }
 
 
+    func add(first:Int,second:Int) -> Int {
+        return first+second
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
 }
 
