@@ -9,15 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var lbname:UILabel?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        //1.
         print("hello,swift!")
-        var name:String="Chunli"
+        
+        //command + t
+        let name:String="Chunli"
         let fullname=name+"Zhang"
-        print(fullname)
+        
+        
+        lbname?.text=fullname
         
         
     }
