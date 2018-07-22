@@ -34,23 +34,36 @@ class ViewController: UIViewController {
         
         ints.sort()
        
-        for index in 0..<3{
-            print("\( ints[index] )")
-        }
-        
-        for str in enghlis{
-            print(str)
-        }
+//        for index in 0..<3{
+//            print("\( ints[index] )")
+//        }
+//
+//        for str in enghlis{
+//            print(str)
+//        }
         
         //Dictionary
-        let 啊 = [1 : "A", 2 : "C", 3 : "B"]
-        
-        for(a ,b)in 啊{
+        let dic = [1 : "A", 2 : "C", 3 : "B"]
+
+        for(a ,b)in dic{
+            print("\(a):\(b)")
+        }
+
+        let dicSorted=dic.sorted(by: {$0.key<$1.key  })
+        //let dicSorted=dic.sorted(by: {$0.value<$1.value  })
+        for(a ,b)in dicSorted{
             print("\(a):\(b)")
         }
         
         
+        var times :Int=0
         
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { smalltimer in
+            times=times+1
+            
+            print("timer:\(smalltimer.isValid)")
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {
